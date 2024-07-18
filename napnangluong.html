@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ngày nghỉ</title>
+  <title>Nạp năng lượng</title>
   <meta name="description"
     content="An Ethereum dApp, where you can bet on Lottery game and win Ether. Provably fair and without fees.">
   <!--Tell Google to index this url and not the GitHub one-->
@@ -23,7 +23,7 @@
 var reader = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
 
 function loadFile() {
-    reader.open('get', 'ngaynghi.txt', true); 
+    reader.open('get', 'napnangluong.txt', true); 
     reader.onreadystatechange = displayContents;
     reader.send(null);
 }
@@ -68,8 +68,8 @@ function displayContents() {
         <div class="nav-links">
             <ul>
           <!--menu Item-->
-          <li><a href="index.html">Ngày làm việc</a></li>
-          <li><a href="ngaynghi">Ngày nghỉ</a></li>
+          <li><a href="index.html">Gốc</a></li>
+          <li><a href="napnangluong.html">Nạp năng lượng</a></li>
           <li><a href="viecbuoitoi">Việc buổi tối</a></li>
             </ul>
         </div>
@@ -86,7 +86,7 @@ function displayContents() {
 
 <form id="form">
 	<div class="buttons">
-  	<button type="button" onclick="loadFile()" >Công việc tiếp theo</button>
+  	<button type="button" onclick="loadFile()" >Nạp tiếp nào!</button>
 	</div>
       </form>
 </div>  
