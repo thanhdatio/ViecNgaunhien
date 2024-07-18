@@ -23,7 +23,7 @@
 var reader = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
 
 function loadFile() {
-    reader.open('get', 'ngaylamviec.txt', true); 
+    reader.open('get', 'index.txt', true); 
     reader.onreadystatechange = displayContents;
     reader.send(null);
 }
@@ -67,7 +67,7 @@ function displayContents() {
         <div class="nav-links">
             <ul>
           <!--menu Item-->
-          <li><a href="index.html">Ngày làm việc</a></li>
+          <li><a href="index.html">Gốc</a></li>
           <li><a href="ngaynghi">Ngày nghỉ</a></li>
           <li><a href="viecbuoitoi">Việc buổi tối</a></li>
             </ul>
@@ -85,7 +85,7 @@ function displayContents() {
 
 <form id="form">
 	<div class="buttons">
-        <button type="button" onclick="loadFile()" >Công việc tiếp theo</button>
+        <button type="button" onclick="loadFile()" >Tiếp tục nào!</button>
 	</div>
       </form>
 </div>  
