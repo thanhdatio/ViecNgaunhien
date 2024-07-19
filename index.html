@@ -25,7 +25,6 @@ var reader = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
 function loadFile() {
     reader.open('get', 'index.txt', true); 
     reader.onreadystatechange = displayContents;
-    reader.onreadystatechange = updateCountDown;
     reader.send(null);
 }
 
