@@ -48,9 +48,6 @@ function displayContents() {
 	    var tg document.getElementById('counter');
             tg.innerText = secondsRemaining;
         }
-
-        updateCountDown();
-        const countDownInterval = setInterval(updateCountDown, 1000);
 </script>
 </head>
 
@@ -106,6 +103,10 @@ function displayContents() {
 </div>  
 </div>
     </div>
+<script>
+        updateCountDown();
+        const countDownInterval = setInterval(updateCountDown, 1000);
+</script>
 </body>
 
 </html>
