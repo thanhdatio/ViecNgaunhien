@@ -38,6 +38,7 @@ function displayContents() {
         var el = document.getElementById('infotext');
        // el.innerHTML = reader.responseText;
         el.innerHTML = randomLine;
+	updateCountDown();
     }
 }
 
@@ -103,10 +104,6 @@ function displayContents() {
 </div>  
 </div>
     </div>
-<script>
-        updateCountDown();
-        const countDownInterval = setInterval(updateCountDown, 1000);
-</script>
 </body>
 
 </html>
