@@ -42,6 +42,37 @@ function displayContents() {
 }
 
 </script>
+
+ <script>
+        document.querySelector('button').addEventListener('click', function() {
+            const bodyElement = document.querySelector('body'); 
+            const currentColor = bodyElement.style.backgroundColor;
+            const counterElement = document.getElementById('counter');
+            const toggleElement = document.getElementById('button');
+
+            if (currentColor == 'white' || currentColor == '') {
+                bodyElement.style.backgroundColor = '#181818';
+                counterElement.style.color = 'white';
+                toggleElement.style.color = 'white';
+            } else {
+                bodyElement.style.backgroundColor = 'white';
+                counterElement.style.color = '#181818';
+                toggleElement.style.color = '#181818';
+            }
+            
+        })
+
+        function updateCountDown() {
+            const now = new Date();
+            const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+            const secondsRemaining = Math.floor((endOfDay - now) / 1000);
+
+            document.getElementById('counter').innerText = secondsRemaining;
+        }
+
+        updateCountDown();
+        const countDownInterval = setInterval(updateCountDown, 1000);
+    </script>
 </head>
 
 <body>
@@ -80,6 +111,7 @@ function displayContents() {
 <div class="wrapper" text-align="center"> 
 	</br>	
  <img src="OmToken.gif" height="50" width="50">
+	<div id="counter">86.400</div>
   <!-- Get cash Form -->
   <div class="card" text-align="center">
 <div class="container" text-align="center">
