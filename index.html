@@ -41,38 +41,17 @@ function displayContents() {
     }
 }
 
-</script>
-
- <script>
-        document.querySelector('button').addEventListener('click', function() {
-            const bodyElement = document.querySelector('body'); 
-            const currentColor = bodyElement.style.backgroundColor;
-            const counterElement = document.getElementById('counter');
-            const toggleElement = document.getElementById('button');
-
-            if (currentColor == 'white' || currentColor == '') {
-                bodyElement.style.backgroundColor = '#181818';
-                counterElement.style.color = 'white';
-                toggleElement.style.color = 'white';
-            } else {
-                bodyElement.style.backgroundColor = 'white';
-                counterElement.style.color = '#181818';
-                toggleElement.style.color = '#181818';
-            }
-            
-        })
-
-        function updateCountDown() {
+	  function updateCountDown() {
             const now = new Date();
             const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
             const secondsRemaining = Math.floor((endOfDay - now) / 1000);
-
-            document.getElementById('counter').innerText = secondsRemaining;
+	    var tg document.getElementById('counter')
+            tg.innerText = secondsRemaining;
         }
 
         updateCountDown();
         const countDownInterval = setInterval(updateCountDown, 1000);
-    </script>
+</script>
 </head>
 
 <body>
