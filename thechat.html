@@ -23,7 +23,7 @@
 var reader = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
 
 function loadFile() {
-    reader.open('get', 'index.txt', true); 
+    reader.open('get', 'thechat.txt', true); 
     reader.onreadystatechange = displayContents;
     reader.send(null);
 }
