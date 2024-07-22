@@ -300,7 +300,7 @@ body{
   background: white; /* post background color */
   border-radius: 0.5rem;
   /*position: relative;*/
-  width: 100%; /* post card width */
+  width: 700px; /* post card width */
   margin: 1rem;
   transition: 250ms all ease-in-out;
   cursor: pointer;
